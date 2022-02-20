@@ -4,7 +4,6 @@ import { WsAdapter } from '@nestjs/platform-ws';
 import { ConfigService } from '@nestjs/config';
 const express = require("express");
 
-
 process.on('unhandledRejection', (err) => {
   throw err;
 });

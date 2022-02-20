@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import {ExchangeRateModule} from "./exchange-rate";
+import { MovieModule } from "./movie";
 import { ConfigModule } from '@nestjs/config';
 
 import { WinstonModule } from 'nest-winston';
@@ -10,7 +10,7 @@ const logger: LoggerConfig = new LoggerConfig();
 @Module({
   imports: [
     ConfigModule.forRoot({}),
-    ExchangeRateModule,
+    MovieModule,
     WinstonModule.forRoot(logger.console())
   ],
 })

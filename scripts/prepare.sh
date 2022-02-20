@@ -12,8 +12,8 @@ unzip Movie_Poster_Metadata.zip > /dev/null
 mv groundtruth movie-metadata
 cd movie-metadata/ && ls | xargs dos2unix -k  > /dev/null
 
+cd ..
+
 echo "clean up"
 rm Movie_Poster_Dataset.zip
 rm Movie_Poster_Metadata.zip
-
-cd ..
