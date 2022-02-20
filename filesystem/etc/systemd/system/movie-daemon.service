@@ -1,0 +1,11 @@
+[Unit]
+Description=MovieScoutApi
+
+[Service]
+
+WorkingDirectory={{ROOT_DIR}}
+ExecStart=/usr/bin/yarn run dev
+
+[Install]
+WantedBy=multi-user.target
+
